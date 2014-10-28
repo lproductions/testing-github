@@ -5,8 +5,8 @@ public class hi : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	Debug.Log("hi");
-        bleugh
+	Debug.Log("hi!!!!");
+
 	}
 	
 	// Update is called once per frame
