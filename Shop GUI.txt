@@ -1,21 +1,21 @@
 Vehicle Purchase - 
-	Buy Taxi (Low)
-	Buy Plane - Passenger (Medium)/Cargo (Medium)/private (High)
-	Buy Bus (Very Low)
-	Buy Train - Passenger (Low) (+Underground Subway (Quite Low))/Cargo (Medium-High)
-	Buy Boat - Ferry (Medium)/Cargo (Medium-High)
+	Buy/Sell Taxi (Low)
+	Buy/Sell Plane - Passenger (Medium)/Cargo (Medium)/private (High)
+	Buy/Sell Bus (Very Low)
+	Buy/Sell Train - Passenger (Low) (+Underground Subway (Quite Low))/Cargo (Medium-High)
+	Buy/Sell Boat - Ferry (Medium)/Cargo (Medium-High)
 
 Personell Hire -
-	Buy Taxi Driver
-	Buy Pilot - + Additional Crew - Cabin/Steward
-	Buy Bus Driver
-	Buy Train Driver
-	Buy Captain - + Additional crew - People
+	Buy/Sell Taxi Driver
+	Buy/Sell Pilot - + Additional Crew - Cabin/Steward
+	Buy/Sell Bus Driver
+	Buy/Sell Train Driver
+	Buy/Sell Captain - + Additional crew - People
 
 Building Purchase -
-	Buy Train Staion - Underground
-	Buy Bus Depot
-	Buy Taxi Depot
-	Buy Airport
-	Buy Port
+	Buy/Sell Train Staion - Underground
+	Buy/Sell Bus Depot
+	Buy/Sell Taxi Depot
+	Buy/Sell Airport
+	Buy/Sell Port
 	
