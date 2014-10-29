@@ -19,5 +19,4 @@ Building Purchase -
 	Buy/Sell Airport
 	Buy/Sell Port
 
-v
-	
+
