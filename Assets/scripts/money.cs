@@ -4,8 +4,8 @@ using System.Collections;
 public class money : MonoBehaviour {
 
 	// Use this for initialization
-    static double money = 10000;
-    static long moneypersecond;
+    static double moneyvalue = 10000D;
+    static double moneypersecond = 1D;
 	void Start () {
         StartCoroutine(moneypersecondsomething());
 	}
@@ -15,8 +15,14 @@ public class money : MonoBehaviour {
         
 	}
     IEnumerator moneypersecondsomething() {
-        money += moneypersecond / 10;
-        yield return new WaitForSeconds(0.1f);
-        moneypersecondsomething();
+        while (true) {
+            addmoney();
+            yield return new WaitForSeconds(0.1f);
+        }
+    }
+    void addmoney() {
+        
+        moneyvalue += moneypersecond / 10;
+        
     }
 }
