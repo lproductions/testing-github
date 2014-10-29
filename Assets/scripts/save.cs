@@ -13,10 +13,15 @@ public class save : MonoBehaviour {
     public int planeowned2 = 0;
     
     public int planeowned3 = 0;
-    public static PlayerPrefs pp;
+    
 	// Use this for initialization
 	void Start () {
-	
+        
+        
+        if(!PlayerPrefs.HasKey("bus1owned")){
+            PlayerPrefs.SetInt("bus1owned", busowned1);
+
+        }
 	}
 	
 	// Update is called once per frame
