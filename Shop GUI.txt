@@ -4,3 +4,18 @@ Vehicle Purchase -
 	Buy Bus (Very Low)
 	Buy Train - Passenger (Low) (+Underground Subway (Quite Low))/Cargo (Medium-High)
 	Buy Boat - Ferry (Medium)/Cargo (Medium-High)
+
+Personell Hire -
+	Buy Taxi Driver
+	Buy Pilot - + Additional Crew - Cabin/Steward
+	Buy Bus Driver
+	Buy Train Driver
+	Buy Captain - + Additional crew - People
+
+Building Purchase -
+	Buy Train Staion - Underground
+	Buy Bus Depot
+	Buy Taxi Depot
+	Buy Airport
+	Buy Port
+	
