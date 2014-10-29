@@ -1,11 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class money : MonoBehaviour {
 
 	// Use this for initialization
     static double moneyvalue = 10000D;
-    static double moneypersecond = 1D;
+    static double moneypersecond = 10D;
 	void Start () {
         StartCoroutine(moneypersecondsomething());
 	}
@@ -17,13 +18,13 @@ public class money : MonoBehaviour {
     IEnumerator moneypersecondsomething() {
         while (true) {
             addmoney();
-            yield return new WaitForSeconds(0.1f);
+            yield return new WaitForSeconds(0.05f);
         }
     }
     void addmoney() {
         
-        moneyvalue += moneypersecond / 10;
-        
+        moneyvalue += moneypersecond / 20;
+        GetComponentInChildren<Text>().text = "£" + moneyvalue;
         
     }
 }
