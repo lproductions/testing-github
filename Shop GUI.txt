@@ -1,6 +1,6 @@
 Vehicle Purchase - 
 	Buy Taxi
-	Buy Plane - Passenger/Cargo
+	Buy Plane - Passenger/Cargo/private
 	Buy Bus
 	Buy Train - Passenger (+Underground Subway)/Cargo
 	Buy Boat - Ferry/Cargo
