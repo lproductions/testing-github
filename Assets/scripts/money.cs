@@ -24,5 +24,6 @@ public class money : MonoBehaviour {
         
         moneyvalue += moneypersecond / 10;
         
+        
     }
 }
