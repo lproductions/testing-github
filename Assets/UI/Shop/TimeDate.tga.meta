@@ -1,8 +1,8 @@
 fileFormatVersion: 2
-guid: 1e4c4e40e87cfe14f8d1d4f984c386eb
+guid: 5cd5c8bca14180c44ba70025e2c0bab3
 TextureImporter:
   fileIDToRecycleName:
-    21300000: MoneyBox
+    21300000: TimeDate
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
