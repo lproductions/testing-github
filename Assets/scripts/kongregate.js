@@ -14,6 +14,7 @@ function OnKongregateAPILoaded(userInfoString){
   userId = parseInt(params[0]);
   username = params[1];
   gameAuthToken = params[2];
+  
 }
  
 
