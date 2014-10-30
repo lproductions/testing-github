@@ -3,7 +3,7 @@ var userId = 0;
 static var username = "Guest";
 var gameAuthToken = "";
 var text : GameObject;
-var money : double;
+
 
  
 function OnKongregateAPILoaded(userInfoString){
@@ -21,7 +21,7 @@ function OnKongregateAPILoaded(userInfoString){
 }
 function Example() {
 while (true){
-        Application.ExternalCall("kongregate.stats.submit","TotalMoney",money);
+        Application.ExternalCall("kongregate.stats.submit","TotalMoney",text.gameObject.transform.parent.GetComponent(money).totalmoney);
         yield new WaitForSeconds(60);
         text.GetComponent(UI.Text).text = "Game saved";
          yield WaitForSeconds(5);

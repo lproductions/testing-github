@@ -7,7 +7,7 @@ public class money : MonoBehaviour {
 	// Use this for initialization
     static double moneyvalue = 10000D;
     static double moneypersecond = 10D;
-    static double totalmoney = 10000D;
+    public static double totalmoney = 10000D;
 	void Start () {
         StartCoroutine(moneypersecondsomething());
 	}
