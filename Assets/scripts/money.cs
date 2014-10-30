@@ -24,7 +24,7 @@ public class money : MonoBehaviour {
     void addmoney() {
         
         moneyvalue += moneypersecond / 20;
-        GetComponentInChildren<Text>().text = "£" + moneyvalue;
+        GetComponentInChildren<Text>().text = "£" + System.Math.Truncate( moneyvalue);
         
     }
 }
