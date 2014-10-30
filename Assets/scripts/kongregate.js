@@ -2,6 +2,8 @@
 var userId = 0;
 static var username = "Guest";
 var gameAuthToken = "";
+var text : GameObject;
+var money : double;
 
  
 function OnKongregateAPILoaded(userInfoString){
@@ -14,14 +16,25 @@ function OnKongregateAPILoaded(userInfoString){
   userId = parseInt(params[0]);
   username = params[1];
   gameAuthToken = params[2];
-  
+  StartCoroutine(Example());
   
 }
+function Example() {
+while (true){
+        Application.ExternalCall("kongregate.stats.submit","TotalMoney",money);
+        yield new WaitForSeconds(60);
+        text.GetComponent(Text).text = "Game saved";
+         yield WaitForSeconds(5);
+         text.GetComponent(Text).text = "";
+        }
+        
+    }
  
 
 function Awake()
     {
-    
+    // Begin the API loading process if it is available
+
     
     // This game object needs to survive multiple levels
     

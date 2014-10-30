@@ -7,6 +7,7 @@ public class money : MonoBehaviour {
 	// Use this for initialization
     static double moneyvalue = 10000D;
     static double moneypersecond = 10D;
+    static double totalmoney = 10000D;
 	void Start () {
         StartCoroutine(moneypersecondsomething());
 	}
@@ -19,12 +20,15 @@ public class money : MonoBehaviour {
         while (true) {
             addmoney();
             yield return new WaitForSeconds(0.05f);
+            
         }
     }
     void addmoney() {
         
         moneyvalue += moneypersecond / 20;
         GetComponentInChildren<Text>().text = "£" + System.Math.Truncate( moneyvalue);
+        totalmoney += moneypersecond / 20;
+        
         
     }
 }
