@@ -16,7 +16,7 @@ function OnKongregateAPILoaded(userInfoString){
   userId = parseInt(params[0]);
   username = params[1];
   gameAuthToken = params[2];
-  StartCoroutine(Example());
+  
   
 }
 function Example() {
@@ -39,6 +39,7 @@ function Awake()
     // This game object needs to survive multiple levels
     
  DontDestroyOnLoad(gameObject);
+ StartCoroutine(Example());
     // Begin the API loading process if it is available
 Application.ExternalEval(
   "if(typeof(kongregateUnitySupport) != 'undefined'){" +
