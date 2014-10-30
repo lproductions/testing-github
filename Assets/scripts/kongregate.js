@@ -23,9 +23,9 @@ function Example() {
 while (true){
         Application.ExternalCall("kongregate.stats.submit","TotalMoney",money);
         yield new WaitForSeconds(60);
-        text.GetComponent(Text).text = "Game saved";
+        text.GetComponent(UI.Text).text = "Game saved";
          yield WaitForSeconds(5);
-         text.GetComponent(Text).text = "";
+         text.GetComponent(UI.Text).text = "";
         }
         
     }
