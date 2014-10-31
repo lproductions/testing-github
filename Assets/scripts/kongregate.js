@@ -21,6 +21,7 @@ function OnKongregateAPILoaded(userInfoString){
 }
 function Example() {
 while (true){
+Debug.Log(text.gameObject.transform.parent.GetComponent(money).totalmoney);
         Application.ExternalCall("kongregate.stats.submit","TotalMoney",text.gameObject.transform.parent.GetComponent(money).totalmoney);
         yield new WaitForSeconds(60);
         text.GetComponent(UI.Text).text = "Game saved";

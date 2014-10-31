@@ -647,6 +647,7 @@ GameObject:
   - 92: {fileID: 1144557134}
   - 124: {fileID: 1144557133}
   - 81: {fileID: 1144557132}
+  - 114: {fileID: 1144557137}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -719,6 +720,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!114 &1144557137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1144557131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f9430216bb9ebe49809e69dfb39ac9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  taxi1: 1
+  busowned1: 0
+  boatowned1: 0
+  boatowned2: 0
+  trainowned1: 0
+  trainowned2: 0
+  undergroundtrainowned1: 0
+  planeowned1: 0
+  planeowned2: 0
+  planeowned3: 0
 --- !u!1 &1433412027
 GameObject:
   m_ObjectHideFlags: 0

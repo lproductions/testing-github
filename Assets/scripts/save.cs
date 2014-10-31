@@ -62,6 +62,41 @@ public class save : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+       
+            
+
+        
 	}
+    public void Save() {
+        PlayerPrefs.SetInt("bus1owned", busowned1);
+
+
+        PlayerPrefs.SetInt("taki1owned", taxi1);
+
+
+
+        PlayerPrefs.SetInt("boat1owned", boatowned1);
+
+
+
+        PlayerPrefs.SetInt("boat2owned", boatowned2);
+
+
+
+        PlayerPrefs.SetInt("train1owned", trainowned1);
+
+        PlayerPrefs.SetInt("train2owned", trainowned2);
+
+
+        PlayerPrefs.SetInt("undergroundtrain1owned", undergroundtrainowned1);
+
+
+        PlayerPrefs.SetInt("plane1owned", planeowned1);
+
+
+        PlayerPrefs.SetInt("plane2owned", planeowned2);
+
+
+        PlayerPrefs.SetInt("plane3owned", planeowned3);
+    }
 }
