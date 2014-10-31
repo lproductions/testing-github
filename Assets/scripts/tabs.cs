@@ -15,5 +15,6 @@ public class tabs : MonoBehaviour {
    public  void settab(int tab) {
 
         tabselected = tab;
+ 
     }
 }

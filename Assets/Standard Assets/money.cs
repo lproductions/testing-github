@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class money : MonoBehaviour {
 
 	// Use this for initialization
-   public static double moneyvalue = 10000D;
+   public static double moneyvalue = PlayerPrefs.GetFloat("moneyvalue");
     public static double moneypersecond = 10D;
     public static double totalmoney = 10000D;
 	void Start () {
