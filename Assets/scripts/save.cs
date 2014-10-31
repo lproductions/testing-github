@@ -36,7 +36,7 @@ public class save : MonoBehaviour {
 
         }
         else {
-            taxi1 = PlayerPrefs.GetInt("bus1owned";
+            taxi1 = PlayerPrefs.GetInt("bus1owned");
 
         }
 
