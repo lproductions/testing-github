@@ -212,5 +212,8 @@ public class save : MonoBehaviour {
 
 
         PlayerPrefs.SetInt("plane3owned", planeowned3);
+        PlayerPrefs.SetInt("money", System.Convert.ToInt32(money.moneyvalue));
+        PlayerPrefs.SetInt("totalmoney", System.Convert.ToInt32(money.totalmoney));
+        PlayerPrefs.SetInt("moneypersecond", System.Convert.ToInt32(money.moneypersecond));
     }
 }

@@ -23,6 +23,7 @@ function Example() {
 while (true){
 Debug.Log(text.gameObject.transform.parent.GetComponent(money).totalmoney);
         Application.ExternalCall("kongregate.stats.submit","TotalMoney",text.gameObject.transform.parent.GetComponent(money).totalmoney);
+		Camera.main.GetComponent(save).Save();
         yield new WaitForSeconds(60);
         text.GetComponent(UI.Text).text = "Game saved";
          yield WaitForSeconds(5);
