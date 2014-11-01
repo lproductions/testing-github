@@ -19,26 +19,13 @@ public class save : MonoBehaviour {
     void Start() {
         
         
-        if(!PlayerPrefs.HasKey("bus1owned")){
-            PlayerPrefs.SetInt("bus1owned", busowned1);
-
-        }
-        else {
+        
           busowned1 =  PlayerPrefs.GetInt("bus1owned");
 
-        }
 
-
-
-
-        if (!PlayerPrefs.HasKey("taxi1owned")) {
-            PlayerPrefs.SetInt("taki1owned", taxi1);
-
-        }
-        else {
             taxi1 = PlayerPrefs.GetInt("bus1owned");
 
-        }
+
 
 
 
@@ -138,38 +125,14 @@ public class save : MonoBehaviour {
 
 
 
-        if (!PlayerPrefs.HasKey("money")) {
-            
-            PlayerPrefs.SetInt("money", System.Convert.ToInt32( money.moneyvalue));
-
-        }
-        else {
-            money.moneyvalue =  PlayerPrefs.GetInt("money");
-
-        }
+      
 
 
+            money.totalmoney = System.Convert.ToDouble(PlayerPrefs.GetInt("totalmoney"));
 
-        if (!PlayerPrefs.HasKey("totalmoney")) {
-            PlayerPrefs.SetInt("totalmoney", System.Convert.ToInt32(money.totalmoney));
+            money.moneypersecond =  PlayerPrefs.GetInt("moneypersecond", 10);
 
-        }
-        else {
-            money.totalmoney =  PlayerPrefs.GetInt("totalmoney");
-
-        }
-
-
-
-
-        if (!PlayerPrefs.HasKey("moneypersecond")) {
-            PlayerPrefs.SetInt("moneypersecond", System.Convert.ToInt32(money.moneypersecond));
-
-        }
-        else {
-            money.moneypersecond =  PlayerPrefs.GetInt("moneypersecond");
-
-        }
+    
         PlayerPrefs.Save();
 
 	}
