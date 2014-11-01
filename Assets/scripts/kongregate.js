@@ -21,7 +21,7 @@ function OnKongregateAPILoaded(userInfoString){
 }
 function Example() {
 while (true){
-
+      //see how long it takes to save
 		
         yield new WaitForSeconds(60);
         text.GetComponent(UI.Text).text = "Game saved";
