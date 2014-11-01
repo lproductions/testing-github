@@ -22,11 +22,12 @@ function OnKongregateAPILoaded(userInfoString){
 function Example() {
 while (true){
 
-		Camera.main.GetComponent(save).Save();
+		
         yield new WaitForSeconds(60);
         text.GetComponent(UI.Text).text = "Game saved";
          yield WaitForSeconds(5);
          text.GetComponent(UI.Text).text = "";
+Camera.main.GetComponent(save).Save();
         }
         
     }
