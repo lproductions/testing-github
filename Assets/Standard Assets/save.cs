@@ -145,6 +145,7 @@ public class save : MonoBehaviour {
 
     }
     public void Save() {
+        Debug.Log(System.DateTime.Now.Millisecond);
         PlayerPrefs.SetInt("bus1owned", busowned1);
 
 
@@ -179,5 +180,6 @@ public class save : MonoBehaviour {
         PlayerPrefs.SetInt("totalmoney", System.Convert.ToInt32(money.totalmoney));
         PlayerPrefs.SetInt("moneypersecond", System.Convert.ToInt32(money.moneypersecond));
         PlayerPrefs.Save();
+        Debug.Log(System.DateTime.Now.Millisecond);
     }
 }
