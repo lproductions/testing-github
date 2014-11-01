@@ -3,7 +3,7 @@ var userId = 0;
 static var username = "Guest";
 var gameAuthToken = "";
 var text : GameObject;
-
+public var fading : boolean = true;
 
  
 function OnKongregateAPILoaded(userInfoString){
@@ -19,18 +19,32 @@ function OnKongregateAPILoaded(userInfoString){
   
   
 }
+
+
 function Example() {
 while (true){
-      //see how long it takes to save
+      
+		text.GetComponent(UI.Text).color.a =0;
 		
         yield new WaitForSeconds(60);
-        text.GetComponent(UI.Text).text = "Game saved";
+		 
+        text.GetComponent(UI.Text).color.a = 1;
+
+		Camera.main.GetComponent(save).Save();
          yield WaitForSeconds(5);
-         text.GetComponent(UI.Text).text = "";
-Camera.main.GetComponent(save).Save();
-        }
+    
+		
+		  
+
+	
+		 
+
+        
         
     }
+	
+	}
+	
  
 
 function Awake()

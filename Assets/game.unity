@@ -251,7 +251,7 @@ GameObject:
   - 222: {fileID: 344948158}
   - 114: {fileID: 344948157}
   m_Layer: 5
-  m_Name: Text
+  m_Name: moneyper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -887,6 +887,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5333d0bda4ed365498a55d40b8b25c73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moneypersecondobject: {fileID: 344948155}
 --- !u!1 &1647615736
 GameObject:
   m_ObjectHideFlags: 0
@@ -930,6 +931,7 @@ MonoBehaviour:
   userId: 0
   gameAuthToken: 
   text: {fileID: 1709051052}
+  fading: 1
 --- !u!1 &1652807022
 GameObject:
   m_ObjectHideFlags: 0
@@ -1069,7 +1071,7 @@ GameObject:
   - 222: {fileID: 1709051055}
   - 114: {fileID: 1709051054}
   m_Layer: 5
-  m_Name: Text
+  m_Name: gamesaved
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1117,7 +1119,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '
+  m_Text: 'Game Saved!
 
 '
 --- !u!222 &1709051055

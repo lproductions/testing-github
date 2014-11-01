@@ -8,6 +8,7 @@ public class money : MonoBehaviour {
     public static double moneyvalue;
     public static double moneypersecond = 10D;
     public static double totalmoney = 10000D;
+    public GameObject moneypersecondobject;
 	void Start () {
         moneyvalue = PlayerPrefs.GetInt("money");
         StartCoroutine(moneypersecondsomething());
@@ -29,6 +30,7 @@ public class money : MonoBehaviour {
         moneyvalue += moneypersecond / 20;
         GetComponentInChildren<Text>().text = "£" + System.Math.Truncate( moneyvalue);
         totalmoney += moneypersecond / 20;
+        moneypersecondobject.GetComponent<Text>().text ="Money per second: £" + moneypersecond ;
         
         
     }
